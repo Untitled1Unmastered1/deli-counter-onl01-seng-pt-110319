@@ -13,11 +13,11 @@ def take_a_number(line, person)
    line << person 
    puts "Welcome, #{person}. You are number #{line.size} in line."
 end
-def now_serving(array)
-  if array.size == 0
+def now_serving(grubs)
+  if grubs.size == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{array.first}."
-    array.shift 
+    puts "Currently serving #{grubs.first}."
+    grubs.shift 
   end
 end
