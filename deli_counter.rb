@@ -9,9 +9,9 @@ def line(queue)
       puts current_line
   end
 end
-def take_a_number(array, string)
-   array << string
-   puts "Welcome, #{string}. You are number #{array.size} in line."
+def take_a_number(line, person)
+   line << person 
+   puts "Welcome, #{person}. You are number #{line.size} in line."
 end
 def now_serving(array)
   if array.size == 0
