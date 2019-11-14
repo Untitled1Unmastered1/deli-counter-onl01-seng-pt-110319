@@ -3,8 +3,8 @@ def line(queue)
     puts "The line is currently empty."
   else
     current_q = "The line is currently:"
-    queue.each_with_index do |name, e|
-     current_line << " #{e + 1}. #{name}"
+    queue.each_with_index do |name, i|
+     current_line << " #{i + 1}. #{name}"
     end
       puts current_line
   end
